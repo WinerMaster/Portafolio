@@ -1,0 +1,140 @@
+* {
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+:root {
+    /*   Background    */
+    --background: #ffffff;
+    
+    /*  COLORS */
+    --white: #ffffff;
+    --color-title: #212121;
+    --color-text: #414141;
+    --color-text-nav: #989898;
+    --color-one: #5498ff;
+    --color-two: #af49ff;
+    --color-three: #ff3e6c;
+    --color-gray-sure: #e8e8e8;
+    --color-gray-dark: #bdbdbd;
+    --banner: #11272e;
+    
+    /* COLORS FOOTER */
+    
+    --background-footer: #11272E;
+    --color-box-dark: #1A3842;
+    --color-input: #162D35; 
+    --color-icon-footer: #276377;
+    --color-title-footer: #E3E3E3;
+    --color-text-footer: #CECECE;
+
+    /* FONT SIZE */
+    
+    --text-size-smaller: 14px;
+    --text-size-small: 16px;
+    --text-size-normal: 18px;
+    --text-size-larger: 28px;
+    --text-size-large: 35px;
+    --text-size-other: 20px;
+
+    --transition-one: 700ms ease-in-out;
+    --transition-two: 500ms ease-in-out;
+    --transition-three: 300ms ease-in-out;
+}
+
+@media (max-width: 720px) {
+    :root {
+        --text-size-smaller: 13px;
+        --text-size-small: 15px;
+        --text-size-normal: 17px;
+        --text-size-larger: 23px;
+        --text-size-large: 28px;
+        --text-size-other: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --text-size-smaller: 12px;
+        --text-size-small: 12px;
+        --text-size-normal: 14px;
+        --text-size-larger: 16px;
+        --text-size-large: 20px;
+        --text-size-other: 16px;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: var(--background);
+}
+
+#root {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-one);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-wrap: balance;
+    font-family: "Poppins", system-ui, -apple-system, Roboto, Ubuntu, sans-serif;
+    font-weight: 700;
+}
+
+p,
+a,
+li,
+span,
+button,
+ul, textarea, input {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+    list-style: none;
+    text-wrap: balance;
+    font-family: "DM Sans", system-ui, -apple-system, Roboto, Ubuntu, sans-serif;
+    font-weight: 500;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+

@@ -1,0 +1,1 @@
+export const ANIMATION_CLASSNAME = "L3kJmZrf5A";

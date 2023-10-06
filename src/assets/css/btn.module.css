@@ -1,0 +1,59 @@
+.global_btn {
+    width: 250px;
+    height: 40px;
+    background: var(--color-one);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.global_btn span {
+    color: var(--white);
+    font-size: var(--text-size-other);
+    position: relative;
+}
+
+.global_btn div {
+    left: 0;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+}
+
+.global_btn div:nth-child(1) {
+    background: var(--color-three);
+    transition: var(--transition-one);
+    transition-property: width;
+}
+
+.global_btn div:nth-child(2) {
+    background: var(--color-two);
+    transition: var(--transition-two);
+    transition-property: width;
+}
+
+.global_btn div:nth-child(3) {
+    background: var(--color-one);
+    transition: var(--transition-three);
+    transition-property: width;
+}
+
+.global_btn:hover div:nth-child(1) {
+    width: 100%;
+    transition: var(--transition-three);
+    transition-property: width;
+}
+
+.global_btn:hover div:nth-child(2) {
+    width: 96%;
+    transition: var(--transition-two);
+    transition-property: width;
+}
+
+.global_btn:hover div:nth-child(3) {
+    width: 92%;
+    transition: var(--transition-one);
+    transition-property: width;
+}

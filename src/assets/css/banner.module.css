@@ -1,0 +1,26 @@
+.banner {
+    width: 100%;
+    height: 15vh;
+    background: var(--banner);
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        height: 10vh;
+    }
+}
+
+.banner_img {
+    width: 100%;
+    height: 100%;
+    background-position: 0 center;
+    background-size:cover;
+    background-repeat: repeat-x;
+    animation: move 70s infinite linear;
+}
+
+@keyframes move {
+to {
+    background-position-x: -2800px;
+}
+}
