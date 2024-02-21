@@ -28,6 +28,6 @@
     "imagemin-cli": "^7.0.0",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
-    "vite": "^2.6.10"
+    "vite": "^2.9.17"
   }
 }
